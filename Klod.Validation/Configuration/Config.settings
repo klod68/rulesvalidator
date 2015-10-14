@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Klod.Validation.Configuration" GeneratedClassName="Config">
+  <Profiles />
+  <Settings>
+    <Setting Name="RulesValidationClassesAssembly" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">z:\me\Documents\Projects\RulesEngineValidator\Klod.Validation.Classes\bin\Klod.Validation.Classes.dll</Value>
+    </Setting>
+    <Setting Name="RuleManagerClass" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Klod.Validation.Classes.Management.RuleManager,Klod.Validation.Classes.Management</Value>
+    </Setting>
+    <Setting Name="RuleMapClass" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Klod.Validation.Classes.Mapping.XmlRuleMap,Klod.Validation.Classes.Mapping</Value>
+    </Setting>
+    <Setting Name="RulesRepositoryClass" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Klod.Validation.Classes.Mapping.XmlRulesRepository,Klod.Validation.Classes.Mapping</Value>
+    </Setting>
+    <Setting Name="FilesMapAddresss" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">c:\mappings\rulesMap.xml</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

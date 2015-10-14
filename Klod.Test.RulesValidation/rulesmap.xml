@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+<rulesMap>
+	//exact value constraints
+	<rule name="Rule1">
+		<constraints>
+			<constraint name="ConstraintName" property="Value" operator="Equal|EqualOrGreaterThan|EqualOrLess|NotEqual|GreaterThan|LessThan" value="5" valueType="System.Int32" typeToValidate="Klod.Test.RulesValidation.AnyClass"/>
+			<constraint name="ContraintName" property="Value" operator="lessThan" value="2" valueType="System.In32" typeToValidate="Klod.Test.RulesValidation.AnyClass"/>
+		</constraints>
+	</rule>
+	<rule name="Rule2">
+		<constraints>
+			<constraint name="ContraintName" property="Name" operator="Equal" value="Claudio Rivera" valueType="System.String" typeToValidate="Klod.Test.RulesValidation.AnyClass"/>
+		</constraints>
+	</rule>
+	//range value constraint
+    	<rule name="Rule3">
+		<constraints>
+			<constraint name="ContraintName" property="Total" operator="Range" value="0|100" valueType="System.Decimal" typeToValidate="Klod.Test.RulesValidation.AnyClass"/>
+		</constraints>
+	</rule>
+
+	<rule name="Rule4">
+		<constraints>
+			<constraint name="ContraintName" property="Color" operator="OptionSet" value="Blue|Red|Black|Green" valueType="System.String" typeToValidate="Klod.Test.RulesValidation.AnyClass"/>
+		</constraints>
+	</rule>
+</rulesMap>
+
+-->
+<rulesMap>
+	<rule name="SeniorMoreThanFive" >
+		<constraints>
+			<constraint name="const1" property="MinValue" operator="GreaterThan" value="5" valueType="System.Decimal" typeToValidate="Klod.Test.RulesValidation.Domain.Discount,Klod.Test.RulesValidation"/>
+			<constraint name="const2" property="AgeRange" operator="Equal" value="Senior" valueType="System.String" typeToValidate="Klod.Test.RulesValidation.Domain.Customer,Klod.Test.RulesValidation"/>
+		</constraints>
+	</rule>
+	<rule name="VipDiscount" >
+		<constraints>
+			<constraint name="const1" property="VipValue" operator="Range" value="15|35" valueType="System.Decimal" typeToValidate="Klod.Test.RulesValidation.Domain.Discount,Klod.Test.RulesValidation"/>
+			<constraint name="const2" property="CustomerType" operator="Equal" value="Platinum" valueType="System.String" typeToValidate="Klod.Test.RulesValidation.Domain.Customer,Klod.Test.RulesValidation"/>
+		</constraints>
+	</rule>
+	<rule name="SizeVerification" >
+		<constraints>
+			<constraint name="const1" property="Size" operator="OptionsSet" value="S|M|L|XL" valueType="System.String" typeToValidate="Klod.Test.RulesValidation.Domain.Customer,Klod.Test.RulesValidation"/>
+		</constraints>
+	</rule>
+	<rule name="GoldCustomer" >
+		<constraints>
+			<constraint name="const1" property="CustomerType" operator="Equal" value="Gold" valueType="System.String" typeToValidate="Klod.Test.RulesValidation.Domain.Customer,Klod.Test.RulesValidation"/>
+		</constraints>
+	</rule>
+</rulesMap>

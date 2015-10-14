@@ -1,0 +1,8 @@
+.vs/*
+Klod.Validation/bin/
+Klod.Validation/obj/
+Klod.Validation.Classes/obj/
+Klod.Validation.Classes/bin/
+Klod.Test.RulesValidation/obj/
+Klod.Test.RulesValidation/bin/
+

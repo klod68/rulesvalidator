@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Klod.Validation.Classes.Configuration" GeneratedClassName="Config">
+  <Profiles />
+  <Settings>
+    <Setting Name="RuleElement" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">rule</Value>
+    </Setting>
+    <Setting Name="RuleNameAttribute" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">name</Value>
+    </Setting>
+    <Setting Name="ConstraintNameAttribute" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">name</Value>
+    </Setting>
+    <Setting Name="ConstraintPropertyAttribute" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">property</Value>
+    </Setting>
+    <Setting Name="ConstraintOperatorAttribute" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">operator</Value>
+    </Setting>
+    <Setting Name="ConstraintValueAttribute" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">value</Value>
+    </Setting>
+    <Setting Name="ConstraintValueTypeAttribute" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">valueType</Value>
+    </Setting>
+    <Setting Name="ContraintTypeToValidateAttribute" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">typeToValidate</Value>
+    </Setting>
+    <Setting Name="RuleConstraintsElement" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">constraints</Value>
+    </Setting>
+    <Setting Name="RuleConstraintElement" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">constraint</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
