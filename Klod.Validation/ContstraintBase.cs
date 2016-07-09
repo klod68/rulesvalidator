@@ -5,8 +5,10 @@ using System.Text;
 namespace Klod.Validation
 {
 	/// <summary>
-	///Abstract class representing a comparison expression. A constraint have a property, a value and operator. 
-	///The main method is the IsValid() that check values in the property of an object, based on the designated operator.
+	///Abstract class representing a comparison expression. 
+    ///A constraint have a property, a value and operator. 
+	///The main method is the IsValid() that check values in the property of an object, 
+    ///based on the designated operator.
 	/// </summary>
 	public abstract class ConstraintBase
 	{

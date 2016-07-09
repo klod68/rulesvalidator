@@ -95,6 +95,20 @@ namespace Klod.Test.RulesValidation
 
         }
 
-		
-	}
+        protected void ValidateButton5_Click(object sender, EventArgs e)
+        {
+
+            SalesView rule5 = new SalesView();
+            rule5.AgeRange = AgeRangeList.Text;
+            rule5.DiscountMin = decimal.Parse(MinValueTextBox.Text);
+            rule5.DiscountMax = decimal.Parse(MaxValueTextBox.Text);
+
+            bool r = RulesValidationController.Rule5Validation(rule5);
+
+            string message = "The rule " + ConfigurationManager.AppSettings["Rule5"] + " validates: " + r.ToString();
+            ClientScript.RegisterStartupScript(Page.GetType(), "Validation", "alert('" + message + "');", true);
+        }
+
+
+    }
 }

@@ -5,8 +5,10 @@ using System.Text;
 namespace Klod.Validation
 {
 	/// <summary>
-	///Abstract class representing a Rule manager. It's an implementation of the Command GoF pattern.
-	///Its main method is Validate() that receives a rule name and a set of objects for properties validation.
+	///Abstract class representing a Rule manager. 
+    ///It's an implementation of the Command GoF pattern.
+	///Its main method is Validate() that receives a rule name and a set of objects 
+    ///for properties validation.
 	/// </summary>
 	public abstract class RulesManagerBase
 	{

@@ -54,6 +54,7 @@
 	<rule name="SeniorDiscount" >
 		<constraints>
 			<constraint name="const1" property="AgeRange" operator="Equal" value="Senior" valueType="System.String" typeToValidate="Klod.Test.RulesValidation.Model.Customer,Klod.Test.RulesValidation"/>
-		</constraints>
+      <constraint name="const2" property="MaxValue" operator="NotEqual" value="0" valueType="System.Decimal" typeToValidate="Klod.Test.RulesValidation.Model.Discount,Klod.Test.RulesValidation"/>
+    </constraints>
 	</rule>
 </rulesMap>

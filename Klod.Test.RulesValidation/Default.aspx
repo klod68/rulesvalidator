@@ -26,11 +26,11 @@
 					<asp:ListItem>Platinum</asp:ListItem>
 				</asp:DropDownList></td>
 		</tr>
-		<tr><td>Price:</td><td><asp:TextBox ID="PriceTextBox" runat="server"></asp:TextBox></td></tr>
+		<tr><td>Price:</td><td><asp:TextBox ID="PriceTextBox" runat="server">0.00</asp:TextBox></td></tr>
 		<tr><td colspan="2">Discount:</td></tr>
-		<tr><td>&nbsp;&nbsp;Max Value:</td><td><asp:TextBox ID="MaxValueTextBox" runat="server"></asp:TextBox></td></tr>
-		<tr><td>&nbsp;&nbsp;Min Value:</td><td><asp:TextBox ID="MinValueTextBox" runat="server"></asp:TextBox></td></tr>
-		<tr><td>VIP Discount:</td><td><asp:TextBox ID="VipDiscountTextBox" runat="server"></asp:TextBox></td></tr>
+		<tr><td>&nbsp;&nbsp;Max Value:</td><td><asp:TextBox ID="MaxValueTextBox" runat="server">0</asp:TextBox></td></tr>
+		<tr><td>&nbsp;&nbsp;Min Value:</td><td><asp:TextBox ID="MinValueTextBox" runat="server">0</asp:TextBox></td></tr>
+		<tr><td>VIP Discount:</td><td><asp:TextBox ID="VipDiscountTextBox" runat="server">0</asp:TextBox></td></tr>
 		 </table>
 		<hr/>
 			Senior more than five percent discount:<br />         
@@ -48,6 +48,10 @@
 		<asp:Label ID="lblSize" runat="server" Text="Size verification (S|M|L|XL)"></asp:Label>
 		<br />
 		<asp:Button ID="ValidateButton4" runat="server" OnClick="ValidateButton4_Click" Text="Rule 4" />
+		<br />
+        <br />
+        Senior, not zero discount<br />
+		<asp:Button ID="ValidateButton5" runat="server" OnClick="ValidateButton5_Click" Text="Rule 5" />
 		<br />
 		<br />
 		</div>

@@ -52,5 +52,18 @@ namespace Klod.Test.RulesValidation.Controller
             list.Add(customer);
             return ruleMan.Validate(ConfigurationManager.AppSettings["Rule4"], list);
         }
+
+        public static bool Rule5Validation(SalesView sales)
+        {
+            Customer customer = new Customer("", sales.CustomerType, sales.AgeRange);
+            Discount discount = new Discount(sales.DiscountMin,sales.DiscountMax, sales.VipDiscount);
+
+            RulesManagerBase ruleMan = RulesValidationFactory.MakeRulesManager();
+
+            IList<object> list = new List<object>();
+            list.Add(customer);
+            list.Add(discount);
+            return ruleMan.Validate(ConfigurationManager.AppSettings["Rule5"], list);
+        }
     }
 }

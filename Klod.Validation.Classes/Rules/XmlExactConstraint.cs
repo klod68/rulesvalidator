@@ -1,12 +1,9 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Xml;
 using System.Reflection;
 
 namespace Klod.Validation.Classes.Rules
 {
-	public class XmlExactConstraint:XmlConstraint
+    public class XmlExactConstraint:XmlConstraint
 	{
 		public XmlExactConstraint() : base() { }
 		public XmlExactConstraint(string name, string property, object value, ConstraintOperator op, Type valueType, Type typeToValidate)
